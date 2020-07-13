@@ -1,27 +1,31 @@
----
+--- 
 kind: pipeline
+name: "Helm Charts"
+steps: 
+  - 
+    commands: 
+      - "helm lint charts/*"
+    image: "alpine/helm:3.2.4"
+    name: "Helm Lint"
+  - 
+    commands: 
+      - "mkdir -p ./public"
+      - "cd public"
+      - |-
+          echo "User-Agent: *
+          Disallow: /" > robots.txt
+      - "echo \"<h1>PetriPod Charts</h1>\" > index.html"
+      - "helm package ../charts/* --destination ."
+      - "helm repo index --url https://petripod.github.io/Charts ."
+    image: "alpine/helm:3.2.4"
+    name: "Package Charts"
+  - 
+    image: plugins/gh-pages
+    name: "Publish Charts"
+    settings: 
+      pages_directory: public/
+      password: 
+        from_secret: github_token
+      username: 
+        from_secret: github_username
 type: docker
-name: Helm Charts
-
-- name: Helm Lint
-  image: alpine/helm:3.2.4
-  commands:
-  - helm lint charts/*
-  
-- name: Package Charts
-  image: alpine/helm:3.2.4
-  commands:
-  - mkdir -p ./public
-  - cd public
-  - "echo \"User-Agent: *\nDisallow: /\" > robots.txt"
-  - helm package ../charts/* --destination .
-  - helm repo index --url https://petripod.github.io/Charts .
-  
-- name: Publish Charts
-  image: plugins/gh-pages
-  settings:
-    username:
-      from_secret: github_username
-    password:
-      from_secret: github_token
-    pages_directory: public/
