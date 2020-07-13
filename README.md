@@ -1,8 +1,8 @@
 [//]: # (The layout of this repo is inspired by codecentric's helm charts.)
 
 # PetriPod Helm Charts
-[![Drone (cloud)](https://img.shields.io/drone/build/PetriPod/Charts?style=flat-square)](https://cloud.drone.io/Petripod/Charts/)
-[![GitHub](https://img.shields.io/github/license/PetriPod/Charts?style=flat-square)](https://choosealicense.com/licenses/mit/)
+[![Build Status](https://cloud.drone.io/api/badges/PetriPod/Charts/status.svg)](https://cloud.drone.io/PetriPod/Charts)
+[![GitHub](![GitHub](https://img.shields.io/github/license/PetriPod/Charts))](https://choosealicense.com/licenses/mit/)
 
 ## Usage
 
