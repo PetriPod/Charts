@@ -2,7 +2,7 @@
 
 # PetriPod Helm Charts
 [![Build Status](https://cloud.drone.io/api/badges/PetriPod/Charts/status.svg)](https://cloud.drone.io/PetriPod/Charts)
-[![GitHub](![GitHub](https://img.shields.io/github/license/PetriPod/Charts))](https://choosealicense.com/licenses/mit/)
+[![GitHub](![GitHub](https://img.shields.io/github/license/PetriPod/Charts.png))](https://choosealicense.com/licenses/mit/)
 
 ## Usage
 
