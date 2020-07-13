@@ -1,0 +1,27 @@
+kind: pipeline
+type: docker
+name: Helm Charts
+
+steps:
+- name: Lint Charts
+  image: alpine/helm:3.2.4
+  commands:
+  - helm lint charts/*
+  
+- name: Package Charts
+  image: alpine/helm:3.2.4
+  commands:
+  - mkdir -p ./public
+  - cd public
+  - "echo \"User-Agent: *\nDisallow: /\" > robots.txt"
+  - helm package ../charts/* --destination .
+  - helm repo index --url https://petripod.github.io/Charts .
+  
+- name: Publish Charts
+  image: plugins/gh-pages
+  settings:
+    username:
+      from_secret: github_username
+    password:
+      from_secret: github_token
+    pages_directory: public/
