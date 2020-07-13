@@ -2,14 +2,9 @@
 kind: pipeline
 name: "Helm Charts"
 steps: 
-  - 
-    commands: 
-      - "helm lint charts/*"
-    image: "alpine/helm:3.2.4"
-    name: "Helm Lint"
   -
     commands:
-      - "ct lint-and-install --config ct.yaml --all"
+      - "ct lint --config ct.yaml --all"
     image: "quay.io/helmpack/chart-testing:v3.0.0-rc.1"
     name: "Chart Testing"
   - 
