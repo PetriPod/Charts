@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   chihaya:
   - apiVersion: v1
-    created: "2020-07-13T15:22:04.899342224Z"
+    created: "2020-07-13T15:37:50.036255556Z"
     description: A Helm chart for running the Chihaya BitTorrent tracker on Kubernetes.
-    digest: 988eec1d87bed572d50b0551c621dacff4fd060b99597d43808d4071d8d7b02b
+    digest: c653c824c8aaf02113135be090405de2c224c0a051e7ca5f4e9f20fe46919361
     home: https://chihaya.io
     maintainers:
     - email: jimmyzelinskie@gmail.com
@@ -18,10 +18,10 @@ entries:
   keycloak:
   - apiVersion: v1
     appVersion: 10.0.0
-    created: "2020-07-13T15:22:04.902647367Z"
+    created: "2020-07-13T15:37:50.039891069Z"
     description: Open Source Identity and Access Management For Modern Applications
       and Services
-    digest: dc7eb83a644d08e0e57f8f7df59c06f2a19a85d6e620a092e63c6a78f192a076
+    digest: f72e6a015b0b621c81aea9e85433958e433c21540d6a7f49248194030b0db957
     home: https://www.keycloak.org/
     icon: https://www.keycloak.org/resources/images/keycloak_logo_480x108.png
     keywords:
@@ -43,4 +43,4 @@ entries:
     urls:
     - https://petripod.github.io/Charts/keycloak-8.2.2.tgz
     version: 8.2.2
-generated: "2020-07-13T15:22:04.898315083Z"
+generated: "2020-07-13T15:37:50.035152376Z"
