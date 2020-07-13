@@ -22,5 +22,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.CR_TOKEN }}"
         with:
-          charts_dir: .
           charts_repo_url: https://petripod.github.io/Charts
