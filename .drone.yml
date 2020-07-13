@@ -25,7 +25,7 @@ steps:
     settings: 
       pages_directory: public/
       password: 
-        from_secret: github_token
+        from_secret: github_secret
       username: 
         from_secret: github_username
 type: docker
