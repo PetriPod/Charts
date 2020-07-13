@@ -1,2 +1,2 @@
 # Charts
-PetriPod Helm Charts
+PetriPod Helm Charts.
