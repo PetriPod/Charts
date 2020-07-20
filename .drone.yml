@@ -1,5 +1,6 @@
 --- 
 kind: pipeline
+type: docker
 name: "Helm Charts"
 steps: 
   -
@@ -28,4 +29,3 @@ steps:
         from_secret: github_secret
       username: 
         from_secret: github_username
-type: docker
