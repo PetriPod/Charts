@@ -3,7 +3,7 @@ entries:
   keycloak:
   - apiVersion: v1
     appVersion: 10.0.0
-    created: "2020-07-13T19:33:40.494900343Z"
+    created: "2020-07-20T01:49:12.223928353Z"
     dependencies:
     - condition: keycloak.persistence.deployPostgres
       name: postgresql
@@ -11,7 +11,7 @@ entries:
       version: 8.9.5
     description: Open Source Identity and Access Management For Modern Applications
       and Services
-    digest: 730f562c0480a057a3cc50b26644f3e7eafe82c5321f3d30704701bc592835a2
+    digest: 46475202c8071dbbd5c3058cb94cd5ca797fa33fc51070f712999a339ea80697
     home: https://www.keycloak.org/
     icon: https://www.keycloak.org/resources/images/keycloak_logo_480x108.png
     keywords:
@@ -33,4 +33,4 @@ entries:
     urls:
     - https://charts.petripod.dev/keycloak-8.2.2.tgz
     version: 8.2.2
-generated: "2020-07-13T19:33:40.488864769Z"
+generated: "2020-07-20T01:49:12.216834647Z"
