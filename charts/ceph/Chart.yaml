@@ -7,3 +7,4 @@ sources:
   - https://github.com/rook/rook
 name: rook-ceph
 appVersion: 1.4
+home: https://rook.io
